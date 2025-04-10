@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guatapé</title>
+  <!-- Enlace al CSS de Bootstrap para estilos rápidos y responsivos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlace al archivo de estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado principal con título y subtítulo -->
+  <header class="bg-success text-white py-4 text-center shadow">
+    <div class="container">
+      <h1 class="display-4">Guatapé: Un paraíso en Antioquia</h1>
+      <p class="lead">Descubre uno de los destinos turísticos más coloridos y fascinantes de Colombia</p>
+    </div>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main class="container my-5">
+    <!-- Imagen destacada del Peñol -->
+    <div class="row mb-5">
+      <div class="col">
+        <img src="https://denomades.imgix.net/destinos/medellin/1563/piedra-penol.jpg" alt="Imagen del Peñol en Guatapé" class="img-fluid rounded shadow">
+      </div>
+    </div>
+
+    <!-- Sección de descripción general -->
+    <section class="mb-5">
+      <h2 class="text-primary">Descripción</h2>
+      <p class="lead">Guatapé es un encantador municipio del oriente antioqueño, famoso por su impresionante Piedra del Peñol, un monolito de más de 200 metros de altura que ofrece vistas panorámicas del embalse y los alrededores. Sus calles están adornadas con zócalos coloridos que reflejan la cultura, la historia y las tradiciones del pueblo.</p>
+    </section>
+
+    <!-- Sección con tarjetas informativas -->
+    <section class="row text-center mb-5">
+      <!-- Tarjeta de ubicación -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title text-success">Ubicación</h3>
+            <p class="card-text">Ubicado en Antioquia, Colombia, a tan solo 2 horas de Medellín. Es un destino accesible y perfecto para una escapada de fin de semana.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta del clima -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title text-success">Clima</h3>
+            <p class="card-text">Guatapé disfruta de un clima templado durante todo el año, con temperaturas promedio de 18°C. Ideal para actividades al aire libre.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Tarjeta de actividades con lista -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title text-success">Actividades</h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Natación en el embalse</li>
+              <li class="list-group-item">Buceo recreativo</li>
+              <li class="list-group-item">Pesca deportiva</li>
+              <li class="list-group-item">Senderismo y escalada</li>
+              <li class="list-group-item">Paseos en lancha</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de curiosidades con acordeón -->
+    <section class="mb-5">
+      <h2 class="text-primary">Curiosidades y datos interesantes</h2>
+      <div class="accordion" id="curiosidades">
+        <!-- Primer ítem del acordeón -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Escalones de la Piedra
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#curiosidades">
+            <div class="accordion-body">
+              La Piedra del Peñol tiene 740 escalones hasta la cima. ¡Una aventura que vale cada paso!
+            </div>
+          </div>
+        </div>
+        <!-- Segundo ítem del acordeón -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              El embalse artificial
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#curiosidades">
+            <div class="accordion-body">
+              El embalse de Guatapé es una obra de ingeniería creada para generar energía hidroeléctrica.
+            </div>
+          </div>
+        </div>
+        <!-- Tercer ítem del acordeón -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Los zócalos coloridos
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#curiosidades">
+            <div class="accordion-body">
+              Cada casa en Guatapé tiene zócalos únicos que cuentan historias y muestran la identidad del hogar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página con mensaje final y créditos -->
+  <footer class="bg-dark text-white text-center py-5 mt-5">
+    <div class="container">
+      <h4 class="mb-3">¡Ven a vivir la experiencia Guatapé!</h4>
+      <p>Un lugar lleno de color, naturaleza y cultura que enamora a cada visitante.</p>
+      <hr class="border-light">
+      <p class="mb-1">© 2025 - Prueba boostrap desarrollo web</p>
+      <p class="mb-0"></p>
+    </div>
+  </footer>
+
+  <!-- Script de Bootstrap para el funcionamiento de componentes interactivos -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
